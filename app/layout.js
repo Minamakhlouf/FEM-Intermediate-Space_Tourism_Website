@@ -1,6 +1,5 @@
 import "./globals.css";
 import styles from "./layout.module.css"
-import Image from "next/image"
 import data from "/data.json"; 
 import { Bellefair } from "next/font/google"
 import ModalNavigation from "@/components/ModalLinkList";

@@ -25,7 +25,7 @@ export default function Home() {
                 <div className={styles["flex-container"]}>
                     <div className={styles["text-container"]}>
                         <h1 className={styles.heading}><span className={barlowCondensed.className}>SO, YOU WANT TO TRAVEL TO</span> SPACE</h1>
-                        <p className={`${styles.paragraph} ${barlow.className}`}>Let's face it; if you want to go space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!</p>
+                        <p className={`${styles.paragraph} ${barlow.className}`}>Let&apos;s face it; if you want to go space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we&apos;ll give you a truly out of this world experience!</p>
                     </div>
                     <div className={styles["button-container"]}>
                         <Link href="/destination">

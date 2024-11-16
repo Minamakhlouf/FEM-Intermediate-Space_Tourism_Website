@@ -1,0 +1,72 @@
+.page {
+    color: white; 
+    text-align: center;
+    text-transform: uppercase;
+    padding: 24px; 
+}
+
+.background {
+    position: absolute; 
+    inset: 0 0 0 0; 
+    background-image: url("/assets/crew/background-crew-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -5; 
+}
+
+.heading {
+    font-size: 16px; 
+    letter-spacing: 15%;
+    line-height: 1.2; 
+    display: flex; 
+    gap: 24px; 
+    justify-content: center;
+    text-align: center;
+    font-weight: 400; 
+    letter-spacing: 4px;
+}
+
+.heading span:first-of-type {
+    opacity: 50%; 
+    margin-left: auto; 
+    font-weight: 700; 
+}
+
+.heading span:last-of-type {
+    margin-right: auto; 
+}
+
+@media screen and (min-width: 768px) {
+    .page {
+        padding: 40px 40px 32px; 
+    }
+    .background {
+        background-image: url("/assets/crew/background-crew-tablet.jpg");
+    }
+
+    .heading {
+        font-size: 20px; 
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .background {
+        background-image: url("/assets/crew/background-crew-desktop.jpg");
+    }
+    .page {
+        padding: 48px; 
+    }
+    .heading {
+        font-size: 28px; 
+        max-width: 1110px;
+        margin: 0 auto; 
+        margin-bottom: 24px; 
+    }
+    .heading span:first-of-type {
+        margin-left: 0; 
+    }
+    .heading span:last-of-type {
+        margin-right: 0; 
+    }
+}

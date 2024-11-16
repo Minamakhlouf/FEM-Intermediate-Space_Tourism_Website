@@ -1,0 +1,159 @@
+.link-container {
+    display: flex;
+    gap: 16px; 
+    justify-content: center;
+    margin-bottom: 40px; 
+}
+
+.link {
+    width: 40px; 
+    aspect-ratio: 1; 
+    background-color: white;
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    color: white; 
+    background-color: transparent;
+    transition: all 0.2s ease-in-out; 
+    border: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+.link:hover, .link.active {
+    color: hsla(230, 35%, 7%, 1); 
+    background-color: white;
+}
+
+.image-container {
+    width: 100%; 
+    aspect-ratio: 1.5; 
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.image_launch-vehicle_portrait {
+    background-image: url("/assets/technology/image-launch-vehicle-portrait.jpg");
+}
+
+.image_spaceport_portrait {
+    background-image: url("/assets/technology/image-spaceport-portrait.jpg");
+}
+
+.image_spaceport_landscape {
+    background-image: url("/assets/technology/image-spaceport-landscape.jpg");
+}
+
+.image_space-capsule_portrait {
+    background-image: url("/assets/technology/image-space-capsule-portrait.jpg");
+}
+
+.image_space-capsule_landscape {
+    background-image: url("/assets/technology/image-space-capsule-landscape.jpg");
+}
+
+.text-container {
+    color: white; 
+    text-align: center;
+    padding: 32px 24px 48px; 
+}
+
+.heading {
+    font-size: 24px; 
+    display: flex; 
+    flex-direction: column;
+    gap: 16px; 
+    line-height: 1.14; 
+    text-transform: uppercase;
+    margin-bottom: 16px; 
+    font-weight: 400; 
+}
+
+.heading span {
+    font-size: 18px; 
+    color: hsla(0, 0%, 100%, .5)
+}
+
+.paragraph {
+    font-size: 15px; 
+    line-height: 1.8; 
+    color: hsla(231, 77%, 90%, 1); 
+    max-width: 512px; 
+    margin: 0 auto; 
+}
+
+.fade-in-down {
+    opacity: 0; 
+    animation: fadeInDown 0.5s ease forwards; 
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0; 
+        transform: translateY(-40px); 
+    }
+    to {
+        opacity: 1; 
+        transform: translateY(0)
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .link {
+        width: 58px; 
+        font-size: 24px; 
+    }
+    .heading {
+        font-size: 40px; 
+    }
+    .heading span {
+        font-size: 24px; 
+    }
+    .paragraph {
+        font-size: 16px; 
+    }
+    .image {
+        max-width: 650px; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .page {
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "text image";
+        max-width: 1275px; 
+        margin-left: auto; 
+        gap: 32px; 
+    }
+    .image {
+        grid-area: image; 
+        max-width: unset; 
+        margin-left: unset; 
+        margin-right: unset; 
+    }
+    .text-container {
+        grid-area: text; 
+        display: flex; 
+        gap: 64px; 
+        align-items: center;
+        padding: 0; 
+    }
+    .link-container {
+        flex-direction: column;
+        gap: 32px; 
+    }
+    .link {
+        width: 80px; 
+    }
+    .image {
+        padding: 67px 0; 
+    }
+    .image-container {
+        aspect-ratio: 1; 
+        background-size: 100% 100%;
+    }
+}

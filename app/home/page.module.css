@@ -1,0 +1,148 @@
+.main {
+    color: white; 
+    padding: 24px; 
+}
+
+.text-container {
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.background {
+    background-image: url("/assets/home/background-home-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute; 
+    inset: 0 0 0 0; 
+    z-index: -5; 
+}
+
+.heading {
+    font-size: 100px; 
+    color: white; 
+    margin-top: 64px; 
+    font-weight: 400; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 24px; 
+    line-height: 1.14;
+}
+
+.heading span {
+    font-size: 18px; 
+    color: #D0D6F9; 
+    letter-spacing: 4px;
+}
+
+.paragraph {
+    color: #D0D6F9; 
+    font-size: 18px; 
+    line-height: 180%; 
+    max-width: 540px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.button {
+    font-size: 32px; 
+    line-height: 36.7%; 
+    margin-top: 167px; 
+    padding: 0 2em; 
+    aspect-ratio: 1;
+    border-radius: 50%;
+    cursor: pointer; 
+    position: relative; 
+    border: none; 
+    color: #0B0D17; 
+    margin-bottom: 119px; 
+}
+
+.button::after {
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 100%; 
+    width: 100%; 
+    background-color: white;
+    border-radius: 50%;
+    z-index: 3; 
+    transition: all 0.3s ease-in-out; 
+    opacity: 0; 
+}
+
+.button:hover::after {
+    transform: scale(2); 
+    opacity: .25; 
+}
+
+.fade-in-down {
+    opacity: 0; 
+    animation: fadeInDown 0.5s ease forwards; 
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0; 
+        transform: translateY(-40px); 
+    }
+    to {
+        opacity: 1; 
+        transform: translateY(0)
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        padding: 128px 40px; 
+    }
+    .background {
+        background-image: url("/assets/home/background-home-tablet.jpg");
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .main {
+        max-width: 1110px; 
+        margin: 0 auto; 
+        padding: 128px 0; 
+    }
+
+    .background {
+        background-image: url("/assets/home/background-home-desktop.jpg");
+    }
+
+    .flex-container {
+        display: flex; 
+        gap: 20px; 
+        align-items: center; 
+        padding-top: 289px; 
+    }
+    .text-container, .button-container {
+        width: 100%; 
+    }
+    .heading {
+        align-items: start;
+        margin-top: 0; 
+    }
+    .paragraph {
+        text-align: left; 
+    }
+    .button-container {
+        display: flex; 
+        justify-content: center;
+    }
+    .button {
+        margin: 0;  
+    }
+}
+
+@media screen and (min-width: 1275px) {
+    .button-container {
+        justify-content: flex-end;
+    }
+}

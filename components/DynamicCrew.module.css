@@ -1,0 +1,129 @@
+.heading {
+    display: flex; 
+    flex-direction: column;
+    gap: 16px; 
+    font-size: 24px; 
+    line-height: 1.14; 
+    gap: 8px; 
+    margin-bottom: 24px; 
+    font-weight: 400; 
+}
+
+.heading span {
+    font-size: 18px; 
+    opacity: .5; 
+}
+
+.paragraph {
+    font-size: 15px; 
+    color: hsla(231, 77%, 90%, 1); 
+    line-height: 1.8; 
+    max-width: 539px; 
+    text-align: center;
+    margin: 0 auto 48px; 
+}
+
+.link-container {
+    display: flex; 
+    list-style: none;
+    gap: 16px; 
+    justify-content: center;
+    margin-bottom: 32px; 
+}
+
+.link {
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%;
+    background-color: white;
+    opacity: 50%; 
+    transition: opacity 0.2s ease-in-out; 
+    cursor: pointer; 
+}
+
+.link:hover, .active {
+    opacity: 1; 
+}
+
+.image-container {
+    position: relative; 
+    width: 271px; 
+    aspect-ratio: 0.8; 
+    margin: 0 auto; 
+}
+
+.text-container {
+    padding-top: 40px; 
+}
+
+.fade-in-down {
+    opacity: 0; 
+    animation: fadeInDown 0.5s ease forwards; 
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0; 
+        transform: translateY(-40px); 
+    }
+    to {
+        opacity: 1; 
+        transform: translateY(0)
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .heading {
+        font-size: 40px; 
+    }
+    .heading span {
+        font-size: 24px; 
+    }
+    .paragraph {
+        font-size: 16px; 
+    }
+    .link-container {
+        margin-bottom: 0; 
+    }
+    .image-container {
+        top: 32px; 
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .page {
+        display: flex; 
+        max-width: 1110px;
+        margin: 0 auto; 
+        padding-bottom: 30px; 
+        justify-content: space-between;
+    }
+    .image-container {
+        top: unset; 
+        width: 529px; 
+    }
+    .text-container {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        position: relative; 
+    }
+    .heading {
+        text-align: left;
+    }
+    .paragraph {
+        text-align: left;
+        font-size: 18px; 
+    }
+    .link-container {
+        position: absolute; 
+        bottom: 0; 
+        left: 0; 
+    }
+    .link {
+        width: 15px; 
+        height: 15px; 
+    }
+}
+

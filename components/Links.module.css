@@ -1,0 +1,29 @@
+.links {
+    list-style: none;
+    display: flex; 
+    flex-direction: column;
+    gap: 32px; 
+}
+
+.links a {
+    text-decoration: none;
+    color: white
+}
+
+.links span {
+    font-weight: 700; 
+}
+
+.link {
+    cursor: pointer; 
+    display: flex; 
+    gap: 12px; 
+}
+
+.link:hover {
+    border-right: 4px solid rgba(255, 255, 255, 0.5)
+}
+
+.link.active {
+    border-right: 3px solid white; 
+}

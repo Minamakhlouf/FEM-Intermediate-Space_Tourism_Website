@@ -1,0 +1,149 @@
+.image {
+    padding: 27px 0; 
+}
+
+.image-container {
+    width: 150px; 
+    aspect-ratio: 1; 
+    position: relative; 
+    margin: 0 auto; 
+}
+
+.text-container {
+    max-width: 514px; 
+    margin: 0 auto; 
+}
+
+.link-container {
+    display: flex; 
+    justify-content: center;
+    list-style: none;
+    gap: 32px; 
+}
+
+.link {
+    padding-bottom: 15px; 
+    cursor: pointer; 
+    font-size: 14px; 
+    color: hsla(231, 77%, 90%, 1); 
+    letter-spacing: 2px;
+}
+
+.link:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.link.active {
+    border-bottom: 3px solid white; 
+}
+
+.heading {
+    font-size: 56px; 
+    line-height: 1.14; 
+    margin-top: 24px; 
+}
+
+.paragraph {
+    font-size: 15px; 
+    line-height: 1.8; 
+    color: hsla(231, 77%, 90%, 1); 
+    margin-top: 16px; 
+    padding-bottom: 24px; 
+    border-bottom: 1px solid hsla(0, 0%, 100%, .25)
+}
+
+.fact-container {
+    margin-top: 24px; 
+    display: flex; 
+    flex-direction: column;
+    gap: 24px; 
+}
+
+.fact-property {
+    font-size: 14px; 
+    color: hsla(231, 77%, 90%, 1); 
+    line-height: 1.2; 
+    margin-bottom: 12px; 
+    letter-spacing: 2px;
+}
+
+.fact-value {
+    font-size: 28px; 
+    color: white; 
+    line-height: 1.14; 
+}
+
+.fade-in-down {
+    opacity: 0; 
+    animation: fadeInDown 0.5s ease forwards; 
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0; 
+        transform: translateY(-40px); 
+    }
+    to {
+        opacity: 1; 
+        transform: translateY(0)
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .image {
+        padding: 42px; 
+        margin-top: 24px; 
+    }
+    .image-container {
+        width: 300px; 
+    }
+    .text-container {
+        margin-top: 32px; 
+    }
+    .link {
+        font-size: 16px; 
+    }
+    .heading {
+        font-size: 80px; 
+        line-height: 1.1; 
+    }
+    .paragraph {
+        font-size: 16px; 
+    }
+    .fact-container {
+        flex-direction: row; 
+    }
+    .fact {
+        width: 100%; 
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .page {
+        max-width: 1110px; 
+        margin: 0 auto; 
+        display: flex; 
+        padding: 133px 0; 
+    }
+    .image-container, .text-container {
+        width: 100%; 
+    }
+    .text-container {
+        max-width: 539px; 
+    }
+    .image {
+        width: 480px; 
+        padding: 30px; 
+    }
+    .heading {
+        font-size: 96px; 
+        font-weight: 400; 
+    }
+    .paragraph {
+        font-size: 18px; 
+    }
+    .link-container {
+        justify-content: flex-start;
+    }
+}

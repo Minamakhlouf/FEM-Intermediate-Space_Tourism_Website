@@ -1,0 +1,18 @@
+.circle {
+    background-color: white;
+    width: 40px; 
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer; 
+}
+
+.disabled {
+    cursor: initial
+}
+
+@media screen and (min-width: 768px) {
+    .circle {
+        width: 48px; 
+    }
+}

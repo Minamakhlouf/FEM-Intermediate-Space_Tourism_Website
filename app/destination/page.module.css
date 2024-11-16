@@ -1,0 +1,60 @@
+.background {
+    position: absolute; 
+    inset: 0 0 0 0; 
+    background-image: url("/assets/destination/background-destination-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -5; 
+}
+
+.page {
+    color: white; 
+    text-align: center;
+    text-transform: uppercase;
+    padding: 24px; 
+}
+
+.heading {
+    font-size: 16px; 
+    letter-spacing: 15%;
+    line-height: 1.2; 
+    display: flex; 
+    gap: 24px; 
+    justify-content: center;
+    font-weight: 400; 
+    letter-spacing: 4px;
+}
+
+.heading span {
+    opacity: 25%; 
+    font-weight: 700; 
+}
+
+@media screen and (min-width: 768px) {
+    .background {
+        background-image: url("/assets/destination/background-destination-tablet.jpg");
+    }
+    .page {
+        padding: 40px; 
+    }
+    .heading {
+        font-size: 20px; 
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .background {
+        background-image: url("/assets/destination/background-destination-desktop.jpg");
+    }
+    .page {
+        padding: 48px; 
+        text-align: left;
+    }
+    .heading {
+        font-size: 28px; 
+        max-width: 1110px;
+        margin: 0 auto; 
+        margin-bottom: 24px; 
+    }
+}

@@ -48,10 +48,13 @@
 }
 
 .button {
-    font-size: 32px; 
+    font-size: 18px; 
     line-height: 36.7%; 
-    margin-top: 167px; 
-    padding: 0 2em; 
+    margin: 167px auto 0; 
+    width: 144px; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
     aspect-ratio: 1;
     border-radius: 50%;
     cursor: pointer; 
@@ -59,6 +62,9 @@
     border: none; 
     color: #0B0D17; 
     margin-bottom: 119px; 
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: white;
 }
 
 .button::after {
@@ -76,7 +82,7 @@
 }
 
 .button:hover::after {
-    transform: scale(2); 
+    transform: scale(1.6); 
     opacity: .25; 
 }
 
@@ -100,8 +106,18 @@
     .main {
         padding: 128px 40px; 
     }
+    .heading {
+        font-size: 144px; 
+    }
+    .heading span {
+        font-size: 28px; 
+    }
     .background {
         background-image: url("/assets/home/background-home-tablet.jpg");
+    }
+    .button {
+        width: 272px; 
+        font-size: 32px; 
     }
 }
 
@@ -131,6 +147,7 @@
     }
     .paragraph {
         text-align: left; 
+        margin-top: 24px; 
     }
     .button-container {
         display: flex; 

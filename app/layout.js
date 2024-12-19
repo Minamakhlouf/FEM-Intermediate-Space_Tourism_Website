@@ -18,7 +18,6 @@ const bellefair = Bellefair({
 
 export default function RootLayout({ children }) {
   let propertyNames = Object.keys(data); 
-  console.log(propertyNames)
   return (
     <html lang="en">
       <body className={`${bellefair.className} ${styles.body}`}>

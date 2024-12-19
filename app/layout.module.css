@@ -47,6 +47,7 @@
         display: grid; 
         grid-template-columns: auto 1fr 40px 1fr;
         padding-top: 40px; 
+        padding-left: 64px; 
     }
     .line-container {
         background-color: transparent;

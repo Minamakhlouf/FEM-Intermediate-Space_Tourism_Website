@@ -28,8 +28,8 @@ export default function Home() {
                         <p className={`${styles.paragraph} ${barlow.className}`}>Let&apos;s face it; if you want to go space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we&apos;ll give you a truly out of this world experience!</p>
                     </div>
                     <div className={styles["button-container"]}>
-                        <Link href="/destination">
-                            <button className={`${styles.button} ${bellefair.className}`}>Explore</button>
+                        <Link href="/destination" className={`${styles.button} ${bellefair.className}`}>
+                            Explore
                         </Link>   
                     </div>
                 </div>

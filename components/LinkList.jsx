@@ -17,10 +17,10 @@ export default function LinkList() {
 
     return(
         <ul className={styles.links}>
-            <li><Link href="/home" className={`${styles.link} ${path === "/home" ? styles.active : ""} ${barlowCondensed.className}`}> <span className={path === "/home" ? styles["hide-on-tablet"] : ""}>00</span> HOME</Link></li>
+            <li key={"navigation-link-0"}><Link href="/home" className={`${styles.link} ${path === "/home" ? styles.active : ""} ${barlowCondensed.className}`}> <span className={path === "/home" ? styles["hide-on-tablet"] : ""}>00</span> HOME</Link></li>
             {propertyNames.map((property, index) => {
             return (
-                <li>
+                <li key={`navigation-link-${index +1}`}>
                     <Link href={`/${property}`} className={`${styles.link} ${path === `/${property}` ? styles.active : ""} ${barlowCondensed.className}`} key={property}><span>0{index + 1}</span> {property.toUpperCase()}</Link>
                 </li>
             )
